@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#ffffff">
+<title>云朵小铺</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: -apple-system, "PingFang SC", sans-serif; background: #f4f4f6; color: #1c1c1e; min-height: 100dvh; padding-bottom: calc(env(safe-area-inset-bottom) + 76px); }
+  header { background: #fff; padding: calc(env(safe-area-inset-top) + 10px) 16px 10px; display: flex; align-items: center; gap: 10px; }
+  header .back { font-size: 26px; color: #1c1c1e; line-height: 1; }
+  header .shop { font-weight: 600; font-size: 16px; }
+  header .tag { margin-left: auto; font-size: 12px; color: #fff; background: #ff7a45; padding: 2px 8px; border-radius: 10px; }
+  .hero { height: 300px; background: linear-gradient(160deg,#dff1ff,#fbe7f3); display: grid; place-items: center; font-size: 150px; }
+  .card { background: #fff; margin: 10px 0; padding: 14px 16px; }
+  .price { color: #ff4d4f; font-size: 26px; font-weight: 700; }
+  .price small { font-size: 15px; }
+  .old { color: #8e8e93; text-decoration: line-through; font-size: 14px; margin-left: 8px; font-weight: 400; }
+  .title { font-size: 17px; font-weight: 600; line-height: 1.45; margin-top: 6px; }
+  .sub { font-size: 14px; color: #6e6e73; margin-top: 4px; }
+  .label { font-size: 14px; color: #6e6e73; margin-bottom: 8px; }
+  .opts { display: flex; gap: 8px; flex-wrap: wrap; }
+  .opt { border: 1px solid #d9d9de; border-radius: 16px; padding: 5px 12px; font-size: 14px; background: #fff; }
+  .opt.on { border-color: #ff7a45; color: #ff7a45; background: #fff4ee; }
+  .line { display: flex; gap: 12px; font-size: 14px; padding: 6px 0; }
+  .line b { color: #6e6e73; font-weight: 400; min-width: 44px; }
+  .review { border-top: 1px solid #efeff2; padding-top: 10px; margin-top: 10px; font-size: 14px; line-height: 1.5; }
+  .review .user { color: #6e6e73; font-size: 13px; margin-bottom: 3px; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; background: #fff; display: flex; gap: 8px; padding: 10px 12px calc(env(safe-area-inset-bottom) + 10px); border-top: 1px solid #e5e5ea; }
+  .bar div { flex: 1; text-align: center; padding: 12px 0; border-radius: 22px; font-weight: 600; font-size: 15px; color: #fff; }
+  .cart { background: #ffa940; } .buy { background: #ff4d4f; }
+</style>
+</head>
+<body>
+<header><span class="back">‹</span><span class="shop">云朵小铺</span><span class="tag">官方认证</span></header>
+<div class="hero">🐱</div>
+<div class="card">
+  <div class="price"><small>¥</small>59<span class="old">¥89</span></div>
+  <div class="title">猫咪陶瓷马克杯 大容量 办公室咖啡杯 可爱礼物</div>
+  <div class="sub">已售 2.3万件 · 好评率 98%</div>
+</div>
+<div class="card">
+  <div class="label">颜色</div>
+  <div class="opts"><span class="opt on">奶油白</span><span class="opt">雾霾蓝</span><span class="opt">樱花粉</span></div>
+  <div class="label" style="margin-top:12px">容量</div>
+  <div class="opts"><span class="opt on">350毫升</span><span class="opt">500毫升</span></div>
+</div>
+<div class="card">
+  <div class="line"><b>发货</b>48小时内发货，全国包邮</div>
+  <div class="line"><b>服务</b>七天无理由退货 · 破损包赔</div>
+</div>
+<div class="card">
+  <div class="label">商品评价（1,284）</div>
+  <div class="review"><div class="user">小***米 · 奶油白</div>杯子比想象中还要可爱，手感很好，每天上班都用它喝咖啡！</div>
+  <div class="review"><div class="user">阿***乐 · 雾霾蓝</div>包装很仔细，送给朋友当生日礼物，她超级喜欢。</div>
+</div>
+<div class="bar"><div class="cart">加入购物车</div><div class="buy">立即购买</div></div>
+</body>
+</html>

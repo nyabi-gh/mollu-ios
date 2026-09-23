@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#f2f2f7">
+<title>Settings</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: -apple-system, sans-serif; background: #f2f2f7; color: #1c1c1e; min-height: 100dvh; padding: calc(env(safe-area-inset-top) + 8px) 16px calc(env(safe-area-inset-bottom) + 24px); }
+  .nav { display: flex; align-items: center; font-size: 17px; color: #0a84ff; margin-bottom: 6px; }
+  h1 { font-size: 32px; font-weight: 700; margin: 4px 0 18px; }
+  .head { font-size: 13px; color: #6e6e73; text-transform: uppercase; margin: 22px 12px 7px; }
+  .group { background: #fff; border-radius: 12px; overflow: hidden; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-top: 1px solid #e5e5ea; font-size: 16px; }
+  .row:first-child { border-top: 0; }
+  .icon { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; color: #fff; font-size: 16px; flex: none; }
+  .text { flex: 1; }
+  .value { color: #8e8e93; font-size: 15px; }
+  .toggle { width: 50px; height: 30px; border-radius: 15px; background: #34c759; position: relative; flex: none; }
+  .toggle::after { content: ""; position: absolute; top: 2px; right: 2px; width: 26px; height: 26px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
+  .toggle.off { background: #e5e5ea; }
+  .toggle.off::after { right: auto; left: 2px; }
+  .foot { font-size: 13px; color: #6e6e73; margin: 7px 12px 0; line-height: 1.4; }
+</style>
+</head>
+<body>
+<div class="nav">‹ Back</div>
+<h1>Settings</h1>
+
+<div class="head">Notifications</div>
+<div class="group">
+  <div class="row"><div class="icon" style="background:#ff3b30">🔔</div><div class="text">Push Notifications</div><div class="toggle"></div></div>
+  <div class="row"><div class="icon" style="background:#ff9500">✉️</div><div class="text">Weekly Summary Email</div><div class="toggle off"></div></div>
+  <div class="row"><div class="icon" style="background:#5856d6">🌙</div><div class="text">Quiet Hours</div><div class="value">10 PM – 7 AM</div></div>
+</div>
+<div class="foot">We'll only notify you about replies, mentions, and friend requests.</div>
+
+<div class="head">Privacy</div>
+<div class="group">
+  <div class="row"><div class="icon" style="background:#34c759">👀</div><div class="text">Show When I'm Online</div><div class="toggle off"></div></div>
+  <div class="row"><div class="icon" style="background:#0a84ff">🔒</div><div class="text">Private Account</div><div class="toggle"></div></div>
+  <div class="row"><div class="icon" style="background:#8e8e93">🚫</div><div class="text">Blocked Users</div><div class="value">3</div></div>
+</div>
+<div class="foot">When your account is private, only people you approve can see your posts.</div>
+
+<div class="head">Storage</div>
+<div class="group">
+  <div class="row"><div class="icon" style="background:#af52de">⬇️</div><div class="text">Download Media Automatically</div><div class="value">Wi‑Fi Only</div></div>
+  <div class="row"><div class="icon" style="background:#ff2d55">🗑️</div><div class="text">Clear Cache</div><div class="value">248 MB</div></div>
+</div>
+</body>
+</html>
