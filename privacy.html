@@ -14,20 +14,21 @@
 <h1>개인정보 처리방침</h1>
 <p class="meta">시행일: 2026년 9월 23일</p>
 
-<p>Mollu(이하 “앱”)는 스크린샷과 사진 속 글자를 인식해 번역하는 iPhone 앱입니다. 앱은 회원 가입이 없고, 개발자가 운영하는 서버가 없으며, 광고·분석·추적 도구를 쓰지 않습니다. <strong>사용자가 직접 문제 보고를 보내는 경우를 제외하면, 개발자는 사용자의 정보를 수집하거나 전달받지 않습니다.</strong></p>
+<p>Mollu(이하 “앱”)는 스크린샷, 사진, 카메라로 찍은 장면 속 글자를 인식해 번역하는 iPhone 앱입니다. 앱은 회원 가입이 없고, 개발자가 운영하는 서버가 없으며, 광고·분석·추적 도구를 쓰지 않습니다. <strong>사용자가 직접 문제 보고를 보내는 경우를 제외하면, 개발자는 사용자의 정보를 수집하거나 전달받지 않습니다.</strong></p>
 
 <h2>1. 기기 안에서 처리하는 정보</h2>
 <ul>
-<li><strong>스크린샷과 사진</strong>: 단축어로 전달받은 스크린샷이나 사용자가 고른 사진에서 Apple의 기기 내 문자 인식(Vision)으로 글자를 읽고, 기본 설정에서는 Apple의 기기 내 번역(Translation)으로 번역합니다. 이 과정은 기기 안에서 이루어집니다.</li>
+<li><strong>스크린샷, 사진, 카메라</strong>: 단축어로 전달받은 스크린샷, 사용자가 고른 사진, 앱의 “카메라로 번역”으로 찍은 사진에서 Apple의 기기 내 문자 인식(Vision)으로 글자를 읽고, 기본 설정에서는 Apple의 기기 내 번역(Translation)으로 번역합니다. 이 과정은 기기 안에서 이루어집니다. 카메라로 찍은 사진은 사진 보관함에 저장되지 않으며, 번역 기록을 켠 경우에만 아래 번역 기록에 함께 보관됩니다.</li>
+<li><strong>소리 내어 읽기</strong>: 번역문 목록에서 읽기를 누르면 iOS의 기기 내 음성 합성으로 읽습니다.</li>
 <li><strong>번역 기록</strong>: 번역한 화면(번역 이미지, 원본 이미지, 인식한 글자와 번역문)은 사용자가 정한 기간 동안만 기기에 저장됩니다. 기본 보관 기간은 7일이며, 설정에서 저장 안 함 / 1일 / 7일 / 30일 / 영구 중에서 고를 수 있습니다. 기간이 지나면 자동으로 지워지고, 언제든 직접 지울 수 있습니다. 기록은 최대 200개까지 보관되며, 넘으면 오래된 기록부터 지워집니다(영구 포함). 번역 기록은 iCloud 백업에서 제외됩니다.</li>
-<li><strong>설정</strong>: 번역 언어, 엔진 선택 등 앱 설정은 기기에 저장됩니다.</li>
+<li><strong>설정</strong>: 번역 언어, 엔진 선택, 용어집(사용자가 등록한 원문과 번역) 등 앱 설정은 기기에 저장됩니다.</li>
 <li><strong>API 키</strong>: 사용자가 입력한 LLM 서비스 API 키는 기기의 키체인에만 저장되며, 다른 기기로 동기화되지 않습니다.</li>
 </ul>
 
 <h2>2. 외부로 전송되는 정보 (선택 기능)</h2>
 <p>설정에서 LLM 번역(Claude, ChatGPT, Gemini)을 쓰기로 하고, 해당 서비스로의 전송에 <strong>동의한 경우에만</strong> 다음과 같이 전송됩니다.</p>
 <ul>
-<li>전송 내용: 스크린샷에서 인식한 <strong>글자와 번역할 언어</strong>. 이미지는 전송하지 않습니다.</li>
+<li>전송 내용: 스크린샷·사진에서 인식한 <strong>글자와 번역할 언어</strong>, 그리고 용어집에 등록한 용어 중 그 글자에 들어 있는 것. 이미지는 전송하지 않습니다.</li>
 <li>받는 곳: 사용자가 고른 서비스의 제공자(Anthropic, OpenAI, Google). 앱은 사용자가 입력한 API 키로 해당 서비스에 직접 요청하며, 개발자의 서버를 거치지 않습니다.</li>
 <li>처리 기준: 전송된 글자는 사용자의 API 계정에서 각 제공자의 정책에 따라 처리됩니다.
  <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> ·
@@ -40,6 +41,7 @@
 
 <h2>3. 권한</h2>
 <ul>
+<li><strong>카메라</strong>: “카메라로 번역” 화면을 열었을 때만 카메라를 켜고, 셔터를 누른 사진 한 장만 번역에 씁니다. 동영상과 소리는 녹화하지 않습니다.</li>
 <li><strong>사진 선택</strong>: 사용자가 고른 사진만 앱에 전달됩니다. 앱은 사진 보관함 전체를 읽지 않습니다.</li>
 <li><strong>사진 보관함에 추가</strong>: 사용자가 공유 메뉴에서 저장을 고를 때만 번역 이미지를 저장합니다.</li>
 <li><strong>Face ID</strong>: 번역 기록 잠금을 켠 경우 iOS가 인증을 처리하며, 앱은 생체 정보에 접근하지 않습니다.</li>
@@ -64,20 +66,21 @@
 <h1>Privacy Policy</h1>
 <p class="meta">Effective September 23, 2026</p>
 
-<p>Mollu (“the app”) is an iPhone app that recognizes and translates text in screenshots and photos. The app has no accounts, no developer-operated servers, and no advertising, analytics, or tracking tools. <strong>Except for problem reports you choose to send, the developer does not collect or receive your information.</strong></p>
+<p>Mollu (“the app”) is an iPhone app that recognizes and translates text in screenshots, photos, and scenes you capture with the camera. The app has no accounts, no developer-operated servers, and no advertising, analytics, or tracking tools. <strong>Except for problem reports you choose to send, the developer does not collect or receive your information.</strong></p>
 
 <h2>1. Information processed on your device</h2>
 <ul>
-<li><strong>Screenshots and photos</strong>: Text in a screenshot passed from Shortcuts, or in a photo you pick, is read with Apple’s on-device text recognition (Vision) and, by default, translated with Apple’s on-device Translation framework. This happens on your device.</li>
+<li><strong>Screenshots, photos, and camera</strong>: Text in a screenshot passed from Shortcuts, a photo you pick, or a photo taken with the app’s “Translate with Camera” is read with Apple’s on-device text recognition (Vision) and, by default, translated with Apple’s on-device Translation framework. This happens on your device. Camera photos are not saved to your photo library; they are kept in your translation history only if history is turned on.</li>
+<li><strong>Read Aloud</strong>: when you tap Read Aloud in the translation list, iOS’s on-device speech synthesis reads the text.</li>
 <li><strong>Translation history</strong>: Translated screens (translated image, original image, recognized text and translations) are kept on your device only for the period you choose. The default is 7 days; you can choose Off, 1 day, 7 days, 30 days, or Forever in Settings. Expired items are deleted automatically, and you can delete them at any time. Up to 200 items are kept (including with Forever); beyond that, the oldest are deleted first. History is excluded from iCloud backups.</li>
-<li><strong>Settings</strong>: App settings such as the target language and engine are stored on your device.</li>
+<li><strong>Settings</strong>: App settings such as the target language, engine, and glossary (terms and translations you add) are stored on your device.</li>
 <li><strong>API keys</strong>: API keys you enter for LLM services are stored only in your device’s Keychain and are not synced to other devices.</li>
 </ul>
 
 <h2>2. Information sent off your device (optional)</h2>
 <p>Only if you choose LLM translation (Claude, ChatGPT, or Gemini) in Settings <strong>and consent</strong> to sending text to that service:</p>
 <ul>
-<li>What is sent: the <strong>recognized text and the target language</strong>. Images are never sent.</li>
+<li>What is sent: the <strong>recognized text and the target language</strong>, plus any glossary terms that appear in that text. Images are never sent.</li>
 <li>Recipient: the provider you selected (Anthropic, OpenAI, or Google). The app sends requests directly to that service with your own API key; nothing passes through the developer’s servers.</li>
 <li>Processing: the text is processed under your API account according to the provider’s policies:
  <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> ·
@@ -90,6 +93,7 @@
 
 <h2>3. Permissions</h2>
 <ul>
+<li><strong>Camera</strong>: the camera is on only while the “Translate with Camera” screen is open, and only the single photo you take is used for translation. No video or audio is recorded.</li>
 <li><strong>Photo picker</strong>: only the photos you select are given to the app. The app does not read your whole library.</li>
 <li><strong>Add to Photos</strong>: a translated image is saved only when you choose to save it from the share sheet.</li>
 <li><strong>Face ID</strong>: if you lock your history, iOS handles authentication; the app never accesses biometric data.</li>
