@@ -19,7 +19,7 @@
 <h2>1. 기기 안에서 처리하는 정보</h2>
 <ul>
 <li><strong>스크린샷과 사진</strong>: 단축어로 전달받은 스크린샷이나 사용자가 고른 사진에서 Apple의 기기 내 문자 인식(Vision)으로 글자를 읽고, 기본 설정에서는 Apple의 기기 내 번역(Translation)으로 번역합니다. 이 과정은 기기 안에서 이루어집니다.</li>
-<li><strong>번역 기록</strong>: 번역한 화면(번역 이미지, 원본 이미지, 인식한 글자와 번역문)은 사용자가 정한 기간 동안만 기기에 저장됩니다. 기본 보관 기간은 7일이며, 설정에서 저장 안 함 / 1일 / 7일 / 30일 / 영구 중에서 고를 수 있습니다. 기간이 지나면 자동으로 지워지고, 언제든 직접 지울 수 있습니다. 번역 기록은 iCloud 백업에서 제외됩니다.</li>
+<li><strong>번역 기록</strong>: 번역한 화면(번역 이미지, 원본 이미지, 인식한 글자와 번역문)은 사용자가 정한 기간 동안만 기기에 저장됩니다. 기본 보관 기간은 7일이며, 설정에서 저장 안 함 / 1일 / 7일 / 30일 / 영구 중에서 고를 수 있습니다. 기간이 지나면 자동으로 지워지고, 언제든 직접 지울 수 있습니다. 기록은 최대 200개까지 보관되며, 넘으면 오래된 기록부터 지워집니다(영구 포함). 번역 기록은 iCloud 백업에서 제외됩니다.</li>
 <li><strong>설정</strong>: 번역 언어, 엔진 선택 등 앱 설정은 기기에 저장됩니다.</li>
 <li><strong>API 키</strong>: 사용자가 입력한 LLM 서비스 API 키는 기기의 키체인에만 저장되며, 다른 기기로 동기화되지 않습니다.</li>
 </ul>
@@ -46,7 +46,7 @@
 </ul>
 
 <h2>4. 보관과 삭제</h2>
-<p>앱이 저장한 정보는 모두 사용자의 기기에 있습니다. 설정 → 번역 기록 → 기록 모두 삭제로 지우거나, 앱을 삭제하면 함께 지워집니다.</p>
+<p>앱이 저장한 정보는 모두 사용자의 기기에 있습니다. 설정 → 번역 기록 → 기록 모두 삭제로 지우거나, 앱을 삭제하면 함께 지워집니다. 단, API 키는 iOS 키체인 특성상 앱을 삭제해도 기기에 남을 수 있으며, 앱을 다시 설치해 처음 실행할 때 지워집니다. 바로 지우려면 앱을 삭제하기 전에 설정에서 API 키를 비워 주세요.</p>
 
 <h2>5. 아동</h2>
 <p>앱은 아동을 대상으로 하지 않으며, 아동의 개인정보를 수집하지 않습니다.</p>
@@ -69,7 +69,7 @@
 <h2>1. Information processed on your device</h2>
 <ul>
 <li><strong>Screenshots and photos</strong>: Text in a screenshot passed from Shortcuts, or in a photo you pick, is read with Apple’s on-device text recognition (Vision) and, by default, translated with Apple’s on-device Translation framework. This happens on your device.</li>
-<li><strong>Translation history</strong>: Translated screens (translated image, original image, recognized text and translations) are kept on your device only for the period you choose. The default is 7 days; you can choose Off, 1 day, 7 days, 30 days, or Forever in Settings. Expired items are deleted automatically, and you can delete them at any time. History is excluded from iCloud backups.</li>
+<li><strong>Translation history</strong>: Translated screens (translated image, original image, recognized text and translations) are kept on your device only for the period you choose. The default is 7 days; you can choose Off, 1 day, 7 days, 30 days, or Forever in Settings. Expired items are deleted automatically, and you can delete them at any time. Up to 200 items are kept (including with Forever); beyond that, the oldest are deleted first. History is excluded from iCloud backups.</li>
 <li><strong>Settings</strong>: App settings such as the target language and engine are stored on your device.</li>
 <li><strong>API keys</strong>: API keys you enter for LLM services are stored only in your device’s Keychain and are not synced to other devices.</li>
 </ul>
@@ -96,7 +96,7 @@
 </ul>
 
 <h2>4. Retention and deletion</h2>
-<p>Everything the app stores stays on your device. Delete it in Settings → History → Delete All History, or by deleting the app.</p>
+<p>Everything the app stores stays on your device. Delete it in Settings → History → Delete All History, or by deleting the app. API keys are an exception: because of how the iOS Keychain works, they may remain on the device after the app is deleted, and are removed the first time the app is launched after reinstalling. To remove them right away, clear your API keys in Settings before deleting the app.</p>
 
 <h2>5. Children</h2>
 <p>The app is not directed to children and does not collect children’s personal information.</p>
